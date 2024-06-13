@@ -1,6 +1,7 @@
 package ColecoesPart1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,11 +32,12 @@ public class ColecoesParte1 {
 				}
 		}
 		
-		System.out.println("*** A lista de nomes será ***");
+		System.out.println("*** A lista de nomes organizada alfabeticamente será:  ***");
 		List<String> nomes = new ArrayList<>();
 		nomes.add(nome1);
 		nomes.add(nome2);
 		nomes.add(nome3);
+		Collections.sort(nomes);
 		System.out.println(nomes);
 	}
 
